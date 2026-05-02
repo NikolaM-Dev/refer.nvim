@@ -167,10 +167,10 @@ local function commands(opts)
             prompt = "M-x > ",
             default_text = default_text,
             keymaps = {
-                ["<C-p>"] = function(_, builtin)
+                ["<Up>"] = function(_, builtin)
                     cycle_history(builtin, 1)
                 end,
-                ["<C-n>"] = function(_, builtin)
+                ["<Down>"] = function(_, builtin)
                     cycle_history(builtin, -1)
                 end,
             },
